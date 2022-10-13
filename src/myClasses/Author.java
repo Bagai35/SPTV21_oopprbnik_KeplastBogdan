@@ -1,36 +1,34 @@
 package myClasses;
 
 public class Author {
-    String firstName;
-    String lastName;
+    private String firstname;
+    private String lastname;
 
-    public String firstName() {
-        return firstName;
+    public Author(){
+
     }
 
-    public Author setFirstName(String firstName) {
-        this.firstName = firstName;
-        return this;
+    public String getFirstname() {
+        return firstname;
     }
 
-    public String lastName() {
-        return lastName;
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
     }
 
-    public Author setLastName(String lastName) {
-        this.lastName = lastName;
-        return this;
+    public String getLastname() {
+        return lastname;
     }
 
-    public Author() {
-
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     @Override
     public String toString() {
         return "Author{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
+                "firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 '}';
     }
 }
